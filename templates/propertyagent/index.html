@@ -1,0 +1,12 @@
+{% if latest_properties %}
+<table>
+  {% for prop in latest_properties %}
+    <tr><td><a href="/property/{{ prop.id }}/">{{ prop.title }}</a></td></tr>
+  {% endfor %}
+</table>
+{% else %}
+No properties available
+{% endif %}
+
+<iframe align=center src="http://www.flickr.com/slideShow/index.gne?user_id=24606107@N00&set=72157634441097983" 
+frameBorder="0" "width=500" height="300" scrolling="no"></iframe>
