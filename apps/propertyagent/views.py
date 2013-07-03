@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from root.propertyagent.models import Property
+from apps.propertyagent.models import Property
 from django.shortcuts import render_to_response, get_object_or_404
 
 # Create your views here.

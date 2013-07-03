@@ -4,11 +4,10 @@ from django.conf.urls.defaults import *
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns('root.propertyagent.views',
-    (r'^$','index'),
-    (r'^(?P<prop_id>\d+)/$','detail'),
+urlpatterns = patterns('',
+    
     # Example:
-    # (r'^mysite/', include('mysite.foo.urls')),
+    (r'^property/', include('apps.propertyagent.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),

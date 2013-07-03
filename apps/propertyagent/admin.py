@@ -1,4 +1,4 @@
-from root.propertyagent.models import Property, Area, SubArea, Amenities, Agent
+from apps.propertyagent.models import Property, Area, SubArea, Amenities, Agent
 from django.contrib import admin
 
 
@@ -16,7 +16,9 @@ class PropertyAdmin(admin.ModelAdmin):
       'bathrooms',
       'amenities',
       'for_sale', 
-      'for_rent' ], 'classes':['collapse']}),
+      'for_rent',
+      'album_link',
+ ], 'classes':['collapse']}),
     ('Cost',{'fields':[
       'agent', 
       'total_sale_price', 
